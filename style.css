@@ -1,0 +1,178 @@
+/* Zero out default margins/paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container that covers full screen and has background */
+.main {
+    /* Make it full viewport height */
+    min-height: 100vh;
+    width: 100%;
+    /* Use your background image - rename "bg.jpg" to whatever your file is */
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%),
+                url("wave-background-abstract-gradient-design_483537-3688.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    /* Optional background for navbar if you want it semi-transparent */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    color: chocolate;
+    font-size: 30px;
+    flex: 1;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: chocolate;
+}
+
+/* Content */
+.content {
+    /* Center content vertically & horizontally, or adjust top margin */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content .par {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.cn {
+    background-color: orange;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.cn a {
+    text-decoration: none;
+    color: black;
+}
+
+.cn:hover {
+    background-color: orange;
+}
+.content span{
+    color: orange;
+    font-size: 60px ;
+}
+.form{
+    width: 200px;
+    height: 300px;
+    background:linear-gradient(to top, black -50%, black 50%);
+    position: absolute;
+    top: 20px;
+    left: 680px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid orange; 
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+}
+.form input:focus{
+    outline: none;
+
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background-color: orange;
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+
+}
+.icons ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+}
+.icons ion-icon:hover{
+    color: orange;
+
+}
